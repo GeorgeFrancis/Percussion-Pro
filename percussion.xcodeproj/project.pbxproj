@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B988BB61988134700F9B880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB51988134700F9B880 /* Foundation.framework */; };
+		1B988BB81988134700F9B880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB71988134700F9B880 /* CoreGraphics.framework */; };
+		1B988BBA1988134700F9B880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB91988134700F9B880 /* UIKit.framework */; };
+		1B988BC01988134700F9B880 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BBE1988134700F9B880 /* InfoPlist.strings */; };
+		1B988BC21988134700F9B880 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B988BC11988134700F9B880 /* main.m */; };
+		1B988BC61988134700F9B880 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B988BC51988134700F9B880 /* AppDelegate.m */; };
+		1B988BC91988134700F9B880 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BC71988134700F9B880 /* Main_iPhone.storyboard */; };
+		1B988BCC1988134700F9B880 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BCA1988134700F9B880 /* Main_iPad.storyboard */; };
+		1B988BCF1988134700F9B880 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B988BCE1988134700F9B880 /* ViewController.m */; };
+		1B988BD11988134700F9B880 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BD01988134700F9B880 /* Images.xcassets */; };
+		1B988BD81988134700F9B880 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BD71988134700F9B880 /* XCTest.framework */; };
+		1B988BD91988134700F9B880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB51988134700F9B880 /* Foundation.framework */; };
+		1B988BDA1988134700F9B880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB91988134700F9B880 /* UIKit.framework */; };
+		1B988BE21988134700F9B880 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BE01988134700F9B880 /* InfoPlist.strings */; };
+		1B988BE41988134700F9B880 /* percussionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B988BE31988134700F9B880 /* percussionTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B988BDB1988134700F9B880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B988BAA1988134700F9B880 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B988BB11988134700F9B880;
+			remoteInfo = percussion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B988BB21988134700F9B880 /* percussion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = percussion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B988BB51988134700F9B880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1B988BB71988134700F9B880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1B988BB91988134700F9B880 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1B988BBD1988134700F9B880 /* percussion-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "percussion-Info.plist"; sourceTree = "<group>"; };
+		1B988BBF1988134700F9B880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B988BC11988134700F9B880 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B988BC31988134700F9B880 /* percussion-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "percussion-Prefix.pch"; sourceTree = "<group>"; };
+		1B988BC41988134700F9B880 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1B988BC51988134700F9B880 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B988BC81988134700F9B880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		1B988BCB1988134700F9B880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		1B988BCD1988134700F9B880 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1B988BCE1988134700F9B880 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1B988BD01988134700F9B880 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1B988BD61988134700F9B880 /* percussionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = percussionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B988BD71988134700F9B880 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1B988BDF1988134700F9B880 /* percussionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "percussionTests-Info.plist"; sourceTree = "<group>"; };
+		1B988BE11988134700F9B880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1B988BE31988134700F9B880 /* percussionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = percussionTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B988BAF1988134700F9B880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B988BB81988134700F9B880 /* CoreGraphics.framework in Frameworks */,
+				1B988BBA1988134700F9B880 /* UIKit.framework in Frameworks */,
+				1B988BB61988134700F9B880 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B988BD31988134700F9B880 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B988BD81988134700F9B880 /* XCTest.framework in Frameworks */,
+				1B988BDA1988134700F9B880 /* UIKit.framework in Frameworks */,
+				1B988BD91988134700F9B880 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B988BA91988134700F9B880 = {
+			isa = PBXGroup;
+			children = (
+				1B988BBB1988134700F9B880 /* percussion */,
+				1B988BDD1988134700F9B880 /* percussionTests */,
+				1B988BB41988134700F9B880 /* Frameworks */,
+				1B988BB31988134700F9B880 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B988BB31988134700F9B880 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B988BB21988134700F9B880 /* percussion.app */,
+				1B988BD61988134700F9B880 /* percussionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B988BB41988134700F9B880 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B988BB51988134700F9B880 /* Foundation.framework */,
+				1B988BB71988134700F9B880 /* CoreGraphics.framework */,
+				1B988BB91988134700F9B880 /* UIKit.framework */,
+				1B988BD71988134700F9B880 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B988BBB1988134700F9B880 /* percussion */ = {
+			isa = PBXGroup;
+			children = (
+				1B988BC41988134700F9B880 /* AppDelegate.h */,
+				1B988BC51988134700F9B880 /* AppDelegate.m */,
+				1B988BC71988134700F9B880 /* Main_iPhone.storyboard */,
+				1B988BCA1988134700F9B880 /* Main_iPad.storyboard */,
+				1B988BCD1988134700F9B880 /* ViewController.h */,
+				1B988BCE1988134700F9B880 /* ViewController.m */,
+				1B988BD01988134700F9B880 /* Images.xcassets */,
+				1B988BBC1988134700F9B880 /* Supporting Files */,
+			);
+			path = percussion;
+			sourceTree = "<group>";
+		};
+		1B988BBC1988134700F9B880 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B988BBD1988134700F9B880 /* percussion-Info.plist */,
+				1B988BBE1988134700F9B880 /* InfoPlist.strings */,
+				1B988BC11988134700F9B880 /* main.m */,
+				1B988BC31988134700F9B880 /* percussion-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B988BDD1988134700F9B880 /* percussionTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B988BE31988134700F9B880 /* percussionTests.m */,
+				1B988BDE1988134700F9B880 /* Supporting Files */,
+			);
+			path = percussionTests;
+			sourceTree = "<group>";
+		};
+		1B988BDE1988134700F9B880 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B988BDF1988134700F9B880 /* percussionTests-Info.plist */,
+				1B988BE01988134700F9B880 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B988BB11988134700F9B880 /* percussion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B988BE71988134700F9B880 /* Build configuration list for PBXNativeTarget "percussion" */;
+			buildPhases = (
+				1B988BAE1988134700F9B880 /* Sources */,
+				1B988BAF1988134700F9B880 /* Frameworks */,
+				1B988BB01988134700F9B880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = percussion;
+			productName = percussion;
+			productReference = 1B988BB21988134700F9B880 /* percussion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B988BD51988134700F9B880 /* percussionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B988BEA1988134700F9B880 /* Build configuration list for PBXNativeTarget "percussionTests" */;
+			buildPhases = (
+				1B988BD21988134700F9B880 /* Sources */,
+				1B988BD31988134700F9B880 /* Frameworks */,
+				1B988BD41988134700F9B880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B988BDC1988134700F9B880 /* PBXTargetDependency */,
+			);
+			name = percussionTests;
+			productName = percussionTests;
+			productReference = 1B988BD61988134700F9B880 /* percussionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B988BAA1988134700F9B880 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = GeorgeFrancis;
+				TargetAttributes = {
+					1B988BD51988134700F9B880 = {
+						TestTargetID = 1B988BB11988134700F9B880;
+					};
+				};
+			};
+			buildConfigurationList = 1B988BAD1988134700F9B880 /* Build configuration list for PBXProject "percussion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B988BA91988134700F9B880;
+			productRefGroup = 1B988BB31988134700F9B880 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B988BB11988134700F9B880 /* percussion */,
+				1B988BD51988134700F9B880 /* percussionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B988BB01988134700F9B880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B988BCC1988134700F9B880 /* Main_iPad.storyboard in Resources */,
+				1B988BD11988134700F9B880 /* Images.xcassets in Resources */,
+				1B988BC91988134700F9B880 /* Main_iPhone.storyboard in Resources */,
+				1B988BC01988134700F9B880 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B988BD41988134700F9B880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B988BE21988134700F9B880 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B988BAE1988134700F9B880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B988BCF1988134700F9B880 /* ViewController.m in Sources */,
+				1B988BC61988134700F9B880 /* AppDelegate.m in Sources */,
+				1B988BC21988134700F9B880 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B988BD21988134700F9B880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B988BE41988134700F9B880 /* percussionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B988BDC1988134700F9B880 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B988BB11988134700F9B880 /* percussion */;
+			targetProxy = 1B988BDB1988134700F9B880 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B988BBE1988134700F9B880 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B988BBF1988134700F9B880 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1B988BC71988134700F9B880 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B988BC81988134700F9B880 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1B988BCA1988134700F9B880 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B988BCB1988134700F9B880 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		1B988BE01988134700F9B880 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B988BE11988134700F9B880 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B988BE51988134700F9B880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B988BE61988134700F9B880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B988BE81988134700F9B880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "percussion/percussion-Prefix.pch";
+				INFOPLIST_FILE = "percussion/percussion-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1B988BE91988134700F9B880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "percussion/percussion-Prefix.pch";
+				INFOPLIST_FILE = "percussion/percussion-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1B988BEB1988134700F9B880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/percussion.app/percussion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "percussion/percussion-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "percussionTests/percussionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1B988BEC1988134700F9B880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/percussion.app/percussion";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "percussion/percussion-Prefix.pch";
+				INFOPLIST_FILE = "percussionTests/percussionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B988BAD1988134700F9B880 /* Build configuration list for PBXProject "percussion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B988BE51988134700F9B880 /* Debug */,
+				1B988BE61988134700F9B880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B988BE71988134700F9B880 /* Build configuration list for PBXNativeTarget "percussion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B988BE81988134700F9B880 /* Debug */,
+				1B988BE91988134700F9B880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B988BEA1988134700F9B880 /* Build configuration list for PBXNativeTarget "percussionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B988BEB1988134700F9B880 /* Debug */,
+				1B988BEC1988134700F9B880 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B988BAA1988134700F9B880 /* Project object */;
+}
