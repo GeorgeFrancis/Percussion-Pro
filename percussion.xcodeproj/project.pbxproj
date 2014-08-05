@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B51798F19910FE300A63ED9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B51798B19910FE300A63ED9 /* button1.png */; };
+		1B51799019910FE300A63ED9 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B51798C19910FE300A63ED9 /* button2.png */; };
+		1B51799119910FE300A63ED9 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B51798D19910FE300A63ED9 /* button3.png */; };
+		1B51799219910FE300A63ED9 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B51798E19910FE300A63ED9 /* button4.png */; };
 		1B988BB61988134700F9B880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB51988134700F9B880 /* Foundation.framework */; };
 		1B988BB81988134700F9B880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB71988134700F9B880 /* CoreGraphics.framework */; };
 		1B988BBA1988134700F9B880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB91988134700F9B880 /* UIKit.framework */; };
@@ -22,6 +26,16 @@
 		1B988BDA1988134700F9B880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB91988134700F9B880 /* UIKit.framework */; };
 		1B988BE21988134700F9B880 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BE01988134700F9B880 /* InfoPlist.strings */; };
 		1B988BE41988134700F9B880 /* percussionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B988BE31988134700F9B880 /* percussionTests.m */; };
+		1B988BEF1988140300F9B880 /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B988BEE1988140300F9B880 /* SoundPlayer.m */; };
+		1B988BF11988144500F9B880 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BF01988144500F9B880 /* AudioToolbox.framework */; };
+		1B988BF31988145C00F9B880 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BF21988145C00F9B880 /* AVFoundation.framework */; };
+		1B988BF51988158000F9B880 /* Acoustic Hat-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BF41988158000F9B880 /* Acoustic Hat-01.wav */; };
+		1B988BF91988158800F9B880 /* CYCdh_AcouKick-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BF61988158800F9B880 /* CYCdh_AcouKick-01.wav */; };
+		1B988BFA1988158800F9B880 /* CYCdh_AcouKick-18.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BF71988158800F9B880 /* CYCdh_AcouKick-18.wav */; };
+		1B988BFB1988158800F9B880 /* CYCdh_LudRimA-07.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BF81988158800F9B880 /* CYCdh_LudRimA-07.wav */; };
+		1B988BFF198CD17200F9B880 /* stopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BFE198CD17200F9B880 /* stopButton.png */; };
+		1B988C01198CD17700F9B880 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B988C00198CD17700F9B880 /* playButton.png */; };
+		1B988C071990C63100F9B880 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B988C041990C63100F9B880 /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B51798B19910FE300A63ED9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
+		1B51798C19910FE300A63ED9 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
+		1B51798D19910FE300A63ED9 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
+		1B51798E19910FE300A63ED9 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
 		1B988BB21988134700F9B880 /* percussion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = percussion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B988BB51988134700F9B880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B988BB71988134700F9B880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +73,17 @@
 		1B988BDF1988134700F9B880 /* percussionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "percussionTests-Info.plist"; sourceTree = "<group>"; };
 		1B988BE11988134700F9B880 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1B988BE31988134700F9B880 /* percussionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = percussionTests.m; sourceTree = "<group>"; };
+		1B988BED198813F800F9B880 /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		1B988BEE1988140300F9B880 /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
+		1B988BF01988144500F9B880 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1B988BF21988145C00F9B880 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1B988BF41988158000F9B880 /* Acoustic Hat-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Acoustic Hat-01.wav"; path = "percussion/Acoustic Hat-01.wav"; sourceTree = "<group>"; };
+		1B988BF61988158800F9B880 /* CYCdh_AcouKick-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "CYCdh_AcouKick-01.wav"; path = "percussion/CYCdh_AcouKick-01.wav"; sourceTree = "<group>"; };
+		1B988BF71988158800F9B880 /* CYCdh_AcouKick-18.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "CYCdh_AcouKick-18.wav"; path = "percussion/CYCdh_AcouKick-18.wav"; sourceTree = "<group>"; };
+		1B988BF81988158800F9B880 /* CYCdh_LudRimA-07.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "CYCdh_LudRimA-07.wav"; path = "percussion/CYCdh_LudRimA-07.wav"; sourceTree = "<group>"; };
+		1B988BFE198CD17200F9B880 /* stopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton.png; sourceTree = "<group>"; };
+		1B988C00198CD17700F9B880 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		1B988C041990C63100F9B880 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B988BF31988145C00F9B880 /* AVFoundation.framework in Frameworks */,
+				1B988BF11988144500F9B880 /* AudioToolbox.framework in Frameworks */,
 				1B988BB81988134700F9B880 /* CoreGraphics.framework in Frameworks */,
 				1B988BBA1988134700F9B880 /* UIKit.framework in Frameworks */,
 				1B988BB61988134700F9B880 /* Foundation.framework in Frameworks */,
@@ -88,6 +119,10 @@
 				1B988BDD1988134700F9B880 /* percussionTests */,
 				1B988BB41988134700F9B880 /* Frameworks */,
 				1B988BB31988134700F9B880 /* Products */,
+				1B988BF41988158000F9B880 /* Acoustic Hat-01.wav */,
+				1B988BF61988158800F9B880 /* CYCdh_AcouKick-01.wav */,
+				1B988BF71988158800F9B880 /* CYCdh_AcouKick-18.wav */,
+				1B988BF81988158800F9B880 /* CYCdh_LudRimA-07.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +138,8 @@
 		1B988BB41988134700F9B880 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B988BF21988145C00F9B880 /* AVFoundation.framework */,
+				1B988BF01988144500F9B880 /* AudioToolbox.framework */,
 				1B988BB51988134700F9B880 /* Foundation.framework */,
 				1B988BB71988134700F9B880 /* CoreGraphics.framework */,
 				1B988BB91988134700F9B880 /* UIKit.framework */,
@@ -120,6 +157,15 @@
 				1B988BCA1988134700F9B880 /* Main_iPad.storyboard */,
 				1B988BCD1988134700F9B880 /* ViewController.h */,
 				1B988BCE1988134700F9B880 /* ViewController.m */,
+				1B988BED198813F800F9B880 /* SoundPlayer.h */,
+				1B988BEE1988140300F9B880 /* SoundPlayer.m */,
+				1B988BFE198CD17200F9B880 /* stopButton.png */,
+				1B988C00198CD17700F9B880 /* playButton.png */,
+				1B988C041990C63100F9B880 /* background.png */,
+				1B51798B19910FE300A63ED9 /* button1.png */,
+				1B51798C19910FE300A63ED9 /* button2.png */,
+				1B51798D19910FE300A63ED9 /* button3.png */,
+				1B51798E19910FE300A63ED9 /* button4.png */,
 				1B988BD01988134700F9B880 /* Images.xcassets */,
 				1B988BBC1988134700F9B880 /* Supporting Files */,
 			);
@@ -234,7 +280,18 @@
 				1B988BCC1988134700F9B880 /* Main_iPad.storyboard in Resources */,
 				1B988BD11988134700F9B880 /* Images.xcassets in Resources */,
 				1B988BC91988134700F9B880 /* Main_iPhone.storyboard in Resources */,
+				1B988C01198CD17700F9B880 /* playButton.png in Resources */,
 				1B988BC01988134700F9B880 /* InfoPlist.strings in Resources */,
+				1B51799219910FE300A63ED9 /* button4.png in Resources */,
+				1B988BFB1988158800F9B880 /* CYCdh_LudRimA-07.wav in Resources */,
+				1B988BF51988158000F9B880 /* Acoustic Hat-01.wav in Resources */,
+				1B988BFF198CD17200F9B880 /* stopButton.png in Resources */,
+				1B988BF91988158800F9B880 /* CYCdh_AcouKick-01.wav in Resources */,
+				1B51799119910FE300A63ED9 /* button3.png in Resources */,
+				1B988C071990C63100F9B880 /* background.png in Resources */,
+				1B51799019910FE300A63ED9 /* button2.png in Resources */,
+				1B988BFA1988158800F9B880 /* CYCdh_AcouKick-18.wav in Resources */,
+				1B51798F19910FE300A63ED9 /* button1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +312,7 @@
 			files = (
 				1B988BCF1988134700F9B880 /* ViewController.m in Sources */,
 				1B988BC61988134700F9B880 /* AppDelegate.m in Sources */,
+				1B988BEF1988140300F9B880 /* SoundPlayer.m in Sources */,
 				1B988BC21988134700F9B880 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +528,7 @@
 				1B988BE91988134700F9B880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B988BEA1988134700F9B880 /* Build configuration list for PBXNativeTarget "percussionTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +537,7 @@
 				1B988BEC1988134700F9B880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
