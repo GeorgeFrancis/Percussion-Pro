@@ -114,6 +114,8 @@
 
 @property NSMutableArray *pressCountArray;
 @property NSMutableArray *pressCountArray2;
+@property NSMutableArray *pressCountArray3;
+@property NSMutableArray *pressCountArray4;
 
 @property NSInteger numberOfRows;
 
@@ -126,6 +128,9 @@
 @property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *buttons;
 
 - (IBAction)pressCountBtn:(id)sender;
+- (IBAction)pressCountBtn2:(id)sender;
+- (IBAction)pressCountBtn3:(id)sender;
+- (IBAction)pressCountBtn4:(id)sender;
 
 - (IBAction)clear:(id)sender;
 
