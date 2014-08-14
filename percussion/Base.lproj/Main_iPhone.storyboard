@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="3jT-ys-RnE">
-                                <rect key="frame" x="0.0" y="-197" width="568" height="328"/>
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="328"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYB-cA-Vzy">
-                                <rect key="frame" x="75" y="47" width="42" height="42"/>
+                                <rect key="frame" x="23" y="90" width="61" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="playButton.png">
+                                <state key="normal" image="playButton.png" backgroundImage="button1.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -703,8 +703,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmB-Ct-5IS">
-                                <rect key="frame" x="410" y="70" width="34" height="30"/>
+                                <rect key="frame" x="512" y="130" width="34" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <state key="normal" title="clear" backgroundImage="button1.png">
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -713,6 +714,92 @@
                                     <action selector="clear:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MrP-tc-JdJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nc-Zs-qaf">
+                                <rect key="frame" x="161" y="106" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="plus.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="increaseTempo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jCv-3a-WFa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdu-7o-zfY">
+                                <rect key="frame" x="128" y="106" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="minus.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="decreaseTempo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="76A-fp-KTK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHP-P7-xAR">
+                                <rect key="frame" x="128" y="133" width="55" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBh-gW-Lcu">
+                                <rect key="frame" x="254" y="81" width="33" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="save" backgroundImage="button1.png">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="save:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="plp-qI-wbo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2e-aI-gd8">
+                                <rect key="frame" x="290" y="81" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="load" backgroundImage="button1.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="load:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mg6-kG-Guw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPs-6D-uy4">
+                                <rect key="frame" x="277" y="8" width="74" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Sequencer" backgroundImage="button1.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szq-Qe-n0h">
+                                <rect key="frame" x="216" y="8" width="53" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Bongos" backgroundImage="button1.png">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beat1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kc-8m-I5h">
+                                <rect key="frame" x="336" y="81" width="37" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="fzP-5w-XHk">
+                                <rect key="frame" x="20" y="8" width="181" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tempoLabel.png" translatesAutoresizingMaskIntoConstraints="NO" id="FFp-NZ-BLI">
+                                <rect key="frame" x="130" y="90" width="55" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -720,12 +807,71 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="playButton" destination="HYB-cA-Vzy" id="nrP-8i-nFC"/>
+                        <outlet property="tempoLabel" destination="XHP-P7-xAR" id="2hP-FI-Y3X"/>
                         <outletCollection property="buttons" destination="XvF-DN-98Y" id="4iR-WE-6hB"/>
                         <outletCollection property="buttons" destination="0Tc-5B-dhw" id="R6G-Co-AcX"/>
                         <outletCollection property="buttons" destination="5HD-KE-yL1" id="dde-Bp-GhB"/>
                         <outletCollection property="buttons" destination="hvy-dn-Mme" id="0Le-A9-3Sb"/>
                         <outletCollection property="buttons" destination="IWW-15-PyV" id="kzE-yY-efd"/>
                         <outletCollection property="buttons" destination="YU1-UG-dlC" id="Ttb-vT-8An"/>
+                        <outletCollection property="buttons" destination="9k1-rv-AMo" id="JK6-7Z-eeP"/>
+                        <outletCollection property="buttons" destination="GmT-0E-PA7" id="IlG-QO-Jwv"/>
+                        <outletCollection property="buttons" destination="6Nu-zq-KsB" id="DdX-y2-0PX"/>
+                        <outletCollection property="buttons" destination="0xC-AA-pH6" id="qlQ-NI-jg0"/>
+                        <outletCollection property="buttons" destination="q0h-yF-q03" id="0xe-MH-TJe"/>
+                        <outletCollection property="buttons" destination="fI8-Lw-dPv" id="L3T-R6-uDG"/>
+                        <outletCollection property="buttons" destination="UJe-iN-t1h" id="6UK-kT-u37"/>
+                        <outletCollection property="buttons" destination="Kha-Om-eIQ" id="FJk-8i-Wl5"/>
+                        <outletCollection property="buttons" destination="Sdj-jh-zvQ" id="3BP-sZ-kCH"/>
+                        <outletCollection property="buttons" destination="Xt0-IR-6iK" id="Dbc-k0-f0T"/>
+                        <outletCollection property="buttons2" destination="4Ou-Zp-btJ" id="dZW-Of-EAX"/>
+                        <outletCollection property="buttons2" destination="goL-UP-Efw" id="dIs-Lo-OZe"/>
+                        <outletCollection property="buttons2" destination="Hw6-g4-dV6" id="xi6-XI-g6f"/>
+                        <outletCollection property="buttons2" destination="qGX-D2-Y7B" id="yQA-QG-Jk2"/>
+                        <outletCollection property="buttons2" destination="gLp-WB-fN6" id="Xk8-9p-q3l"/>
+                        <outletCollection property="buttons2" destination="KzX-fS-3p2" id="Xtm-37-d8Y"/>
+                        <outletCollection property="buttons2" destination="Qrq-sP-wLb" id="uHS-vD-MR6"/>
+                        <outletCollection property="buttons2" destination="Zh4-dH-n3D" id="x50-WT-q8z"/>
+                        <outletCollection property="buttons2" destination="gvT-g6-DT3" id="7hh-mI-qbP"/>
+                        <outletCollection property="buttons2" destination="gI0-GZ-N5d" id="zTz-c8-Epq"/>
+                        <outletCollection property="buttons2" destination="CZT-AS-KPs" id="nh5-My-GZ5"/>
+                        <outletCollection property="buttons2" destination="JJH-tU-HQx" id="WiW-Cj-fxm"/>
+                        <outletCollection property="buttons2" destination="6TJ-uh-zhR" id="f5I-wF-NLy"/>
+                        <outletCollection property="buttons2" destination="oNW-O0-Odk" id="Tlz-rs-RN4"/>
+                        <outletCollection property="buttons2" destination="ynC-8Y-e60" id="ihk-wQ-oES"/>
+                        <outletCollection property="buttons2" destination="V0j-dL-agn" id="1be-CH-Ve1"/>
+                        <outletCollection property="buttons3" destination="hlC-Zv-YrO" id="Iq4-sf-aas"/>
+                        <outletCollection property="buttons3" destination="Czd-gJ-KSn" id="UZV-fk-BOl"/>
+                        <outletCollection property="buttons3" destination="kjV-mC-7tf" id="L5V-NJ-Vmz"/>
+                        <outletCollection property="buttons3" destination="tqb-9K-VX1" id="jSf-zw-6HW"/>
+                        <outletCollection property="buttons3" destination="mXu-xC-BOy" id="Qtf-j3-Ldx"/>
+                        <outletCollection property="buttons3" destination="Svn-Uy-PGU" id="D4k-Ss-uUq"/>
+                        <outletCollection property="buttons3" destination="h6n-dd-W83" id="QAr-uN-gk9"/>
+                        <outletCollection property="buttons3" destination="1ec-1h-o7A" id="w28-GZ-gTI"/>
+                        <outletCollection property="buttons3" destination="Twl-6E-3pI" id="Tu8-5W-6ee"/>
+                        <outletCollection property="buttons3" destination="mfe-6u-Y03" id="gb2-MX-DO1"/>
+                        <outletCollection property="buttons3" destination="Jal-CF-GjF" id="bse-Zl-rCC"/>
+                        <outletCollection property="buttons3" destination="EVh-mj-c62" id="SFh-9u-76z"/>
+                        <outletCollection property="buttons3" destination="ybv-cd-MXQ" id="tRD-ET-P1k"/>
+                        <outletCollection property="buttons3" destination="SO8-9C-K52" id="j0n-Av-g5Z"/>
+                        <outletCollection property="buttons3" destination="SRp-8C-c51" id="LMd-kI-o4y"/>
+                        <outletCollection property="buttons3" destination="ll3-Kz-RxN" id="cO6-d2-co2"/>
+                        <outletCollection property="buttons4" destination="vNP-fi-O9E" id="Mu2-oV-tkA"/>
+                        <outletCollection property="buttons4" destination="9t4-hn-XSd" id="ah8-SB-Orw"/>
+                        <outletCollection property="buttons4" destination="3fN-Xi-yHv" id="A75-qg-d0y"/>
+                        <outletCollection property="buttons4" destination="NNS-DZ-UhV" id="SCD-ac-Im5"/>
+                        <outletCollection property="buttons4" destination="htf-S2-tyW" id="vUU-ct-Fqy"/>
+                        <outletCollection property="buttons4" destination="8wI-Bb-tqi" id="LDg-P9-zn2"/>
+                        <outletCollection property="buttons4" destination="5mP-Cb-HOx" id="Hrz-G1-APs"/>
+                        <outletCollection property="buttons4" destination="TTY-ZP-UA7" id="Yez-VW-Gbt"/>
+                        <outletCollection property="buttons4" destination="u5H-c3-gcy" id="zPT-C3-23y"/>
+                        <outletCollection property="buttons4" destination="YAU-CC-xPA" id="PxW-Yp-zOZ"/>
+                        <outletCollection property="buttons4" destination="SRA-zT-IrP" id="WW4-jJ-3vH"/>
+                        <outletCollection property="buttons4" destination="yZm-3k-1jf" id="sBU-2n-0nP"/>
+                        <outletCollection property="buttons4" destination="guK-dn-ERg" id="aHo-bl-v6Z"/>
+                        <outletCollection property="buttons4" destination="OIk-dC-EQe" id="4R8-KI-s7u"/>
+                        <outletCollection property="buttons4" destination="WJ0-db-JKB" id="dyK-GJ-1Sv"/>
+                        <outletCollection property="buttons4" destination="TRP-Sy-gBT" id="Gu0-dh-2ZV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -736,7 +882,11 @@
     <resources>
         <image name="background.png" width="1136" height="640"/>
         <image name="button1.png" width="129" height="147"/>
+        <image name="logo.png" width="355" height="44"/>
+        <image name="minus.png" width="131" height="130"/>
         <image name="playButton.png" width="256" height="256"/>
+        <image name="plus.png" width="131" height="130"/>
+        <image name="tempoLabel.png" width="107" height="31"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -111,6 +111,8 @@
 
 @property NSTimer *timer;
 @property float timerCounter;
+@property float tempoCount;
+@property float bpm;
 
 @property NSMutableArray *pressCountArray;
 @property NSMutableArray *pressCountArray2;
@@ -120,19 +122,29 @@
 @property NSInteger numberOfRows;
 
 @property NSMutableArray *countArray;
+@property int savedCount;
 
 
 @property NSMutableArray *btnTimerArray;
 
+@property (strong, nonatomic) IBOutlet UILabel *tempoLabel;
 
 @property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *buttons;
+@property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *buttons2;
+@property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *buttons3;
+@property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *buttons4;
 
 - (IBAction)pressCountBtn:(id)sender;
 - (IBAction)pressCountBtn2:(id)sender;
 - (IBAction)pressCountBtn3:(id)sender;
 - (IBAction)pressCountBtn4:(id)sender;
 
+- (IBAction)increaseTempo:(id)sender;
+- (IBAction)decreaseTempo:(id)sender;
+
 - (IBAction)clear:(id)sender;
+- (IBAction)save:(id)sender;
+- (IBAction)load:(id)sender;
 
 - (IBAction)playsound:(id)sender;
 @end

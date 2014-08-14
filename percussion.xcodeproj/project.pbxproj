@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1B51798F19910FE300A63ED9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B51798B19910FE300A63ED9 /* button1.png */; };
-		1B51799019910FE300A63ED9 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B51798C19910FE300A63ED9 /* button2.png */; };
-		1B51799119910FE300A63ED9 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B51798D19910FE300A63ED9 /* button3.png */; };
-		1B51799219910FE300A63ED9 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B51798E19910FE300A63ED9 /* button4.png */; };
+		1B91BF8E199CDA25007ED43B /* tempoLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B91BF8D199CDA25007ED43B /* tempoLabel.png */; };
+		1B91BF90199CDA2B007ED43B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B91BF8F199CDA2B007ED43B /* logo.png */; };
+		1B965526199227AF0089D033 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B965524199227AF0089D033 /* minus.png */; };
+		1B965527199227AF0089D033 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B965525199227AF0089D033 /* plus.png */; };
+		1B96552B199228850089D033 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B965528199228850089D033 /* button2.png */; };
+		1B96552C199228850089D033 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B965529199228850089D033 /* button3.png */; };
+		1B96552D199228850089D033 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B96552A199228850089D033 /* button4.png */; };
 		1B988BB61988134700F9B880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB51988134700F9B880 /* Foundation.framework */; };
 		1B988BB81988134700F9B880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB71988134700F9B880 /* CoreGraphics.framework */; };
 		1B988BBA1988134700F9B880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB91988134700F9B880 /* UIKit.framework */; };
@@ -50,9 +54,13 @@
 
 /* Begin PBXFileReference section */
 		1B51798B19910FE300A63ED9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
-		1B51798C19910FE300A63ED9 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
-		1B51798D19910FE300A63ED9 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
-		1B51798E19910FE300A63ED9 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
+		1B91BF8D199CDA25007ED43B /* tempoLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tempoLabel.png; sourceTree = "<group>"; };
+		1B91BF8F199CDA2B007ED43B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		1B965524199227AF0089D033 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		1B965525199227AF0089D033 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		1B965528199228850089D033 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
+		1B965529199228850089D033 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
+		1B96552A199228850089D033 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
 		1B988BB21988134700F9B880 /* percussion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = percussion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B988BB51988134700F9B880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B988BB71988134700F9B880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -163,9 +171,13 @@
 				1B988C00198CD17700F9B880 /* playButton.png */,
 				1B988C041990C63100F9B880 /* background.png */,
 				1B51798B19910FE300A63ED9 /* button1.png */,
-				1B51798C19910FE300A63ED9 /* button2.png */,
-				1B51798D19910FE300A63ED9 /* button3.png */,
-				1B51798E19910FE300A63ED9 /* button4.png */,
+				1B965524199227AF0089D033 /* minus.png */,
+				1B965525199227AF0089D033 /* plus.png */,
+				1B965528199228850089D033 /* button2.png */,
+				1B965529199228850089D033 /* button3.png */,
+				1B96552A199228850089D033 /* button4.png */,
+				1B91BF8F199CDA2B007ED43B /* logo.png */,
+				1B91BF8D199CDA25007ED43B /* tempoLabel.png */,
 				1B988BD01988134700F9B880 /* Images.xcassets */,
 				1B988BBC1988134700F9B880 /* Supporting Files */,
 			);
@@ -278,19 +290,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B988BCC1988134700F9B880 /* Main_iPad.storyboard in Resources */,
+				1B965527199227AF0089D033 /* plus.png in Resources */,
+				1B96552B199228850089D033 /* button2.png in Resources */,
 				1B988BD11988134700F9B880 /* Images.xcassets in Resources */,
 				1B988BC91988134700F9B880 /* Main_iPhone.storyboard in Resources */,
 				1B988C01198CD17700F9B880 /* playButton.png in Resources */,
 				1B988BC01988134700F9B880 /* InfoPlist.strings in Resources */,
-				1B51799219910FE300A63ED9 /* button4.png in Resources */,
 				1B988BFB1988158800F9B880 /* CYCdh_LudRimA-07.wav in Resources */,
+				1B96552D199228850089D033 /* button4.png in Resources */,
 				1B988BF51988158000F9B880 /* Acoustic Hat-01.wav in Resources */,
+				1B965526199227AF0089D033 /* minus.png in Resources */,
 				1B988BFF198CD17200F9B880 /* stopButton.png in Resources */,
+				1B91BF90199CDA2B007ED43B /* logo.png in Resources */,
 				1B988BF91988158800F9B880 /* CYCdh_AcouKick-01.wav in Resources */,
-				1B51799119910FE300A63ED9 /* button3.png in Resources */,
 				1B988C071990C63100F9B880 /* background.png in Resources */,
-				1B51799019910FE300A63ED9 /* button2.png in Resources */,
+				1B96552C199228850089D033 /* button3.png in Resources */,
 				1B988BFA1988158800F9B880 /* CYCdh_AcouKick-18.wav in Resources */,
+				1B91BF8E199CDA25007ED43B /* tempoLabel.png in Resources */,
 				1B51798F19910FE300A63ED9 /* button1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

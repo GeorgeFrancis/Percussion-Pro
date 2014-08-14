@@ -36,6 +36,12 @@
     
     self.countArray = [[NSMutableArray alloc]initWithCapacity:self.numberOfRows];
     
+    self.tempoCount = 0.25;
+    
+    self.bpm = 60 / self.tempoCount;
+    
+    [self.tempoLabel setText:[NSString stringWithFormat:@"%.0f bpm",self.bpm]];
+    
     [super viewDidLoad];
     
     
@@ -64,10 +70,6 @@
     self.btnTimer15 = 3.75;
     self.btnTimer16 = 4;
     
-    
-    
-    
-    
     [self.btnTimerArray addObject:[NSNumber numberWithFloat:self.btnTimer1]];
     [self.btnTimerArray addObject:[NSNumber numberWithFloat:self.btnTimer2]];
     [self.btnTimerArray addObject:[NSNumber numberWithFloat:self.btnTimer3]];
@@ -84,10 +86,6 @@
     [self.btnTimerArray addObject:[NSNumber numberWithFloat:self.btnTimer14]];
     [self.btnTimerArray addObject:[NSNumber numberWithFloat:self.btnTimer15]];
     [self.btnTimerArray addObject:[NSNumber numberWithFloat:self.btnTimer16]];
-    
-  
-        
-    
 }
 
 -(void)setUpPressedCount{
@@ -189,9 +187,43 @@
     
 }
 
+
+- (IBAction)increaseTempo:(id)sender {
+    
+    [self.timer invalidate];
+    
+    
+    self.tempoCount = self.tempoCount -0.05;
+    
+    if (self.tempoCount < 0.1) {
+        self.tempoCount = 0.1;
+    }
+    
+    self.bpm = 60 / self.tempoCount;
+    
+    [self.tempoLabel setText:[NSString stringWithFormat:@"%.0f bpm",self.bpm]];
+    
+    [self timerSetup];
+    
+}
+
+- (IBAction)decreaseTempo:(id)sender {
+    
+    [self.timer invalidate];
+    
+    self.tempoCount = self.tempoCount +0.05;
+    
+    self.bpm = 60 / self.tempoCount;
+    
+    [self.tempoLabel setText:[NSString stringWithFormat:@"%.0f bpm",self.bpm]];
+    
+    [self timerSetup];
+
+}
+
 -(void)timerSetup{
     
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.25 target:self selector:@selector(playBeat)
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:self.tempoCount target:self selector:@selector(playBeat)
                                                   userInfo:nil repeats:YES];
 }
 
@@ -359,11 +391,31 @@
 
 - (IBAction)pressCountBtn:(id)sender {
     
-    
          UIButton * btn = (UIButton *)sender;
     [self setButtonImage:btn andArray: self.pressCountArray];
-    
 }
+
+- (IBAction)pressCountBtn2:(id)sender {
+    
+    UIButton * btn = (UIButton *)sender;
+    [self setButtonImage:btn andArray:self.pressCountArray2];
+}
+
+- (IBAction)pressCountBtn3:(id)sender {
+    
+    UIButton * btn = (UIButton *)sender;
+    [self setButtonImage:btn andArray:self.pressCountArray3];
+}
+
+- (IBAction)pressCountBtn4:(id)sender {
+    
+    UIButton * btn = (UIButton *)sender;
+    [self setButtonImage:btn andArray:self.pressCountArray4];
+}
+
+
+
+
 
 -(void)setButtonImage:(UIButton *) btn andArray:(NSMutableArray *) array{
     
@@ -386,84 +438,140 @@
                 case 1:
                      [btn setImage:[UIImage imageNamed:@"button2.png"] forState:UIControlStateNormal];
                     break;
-                    
                 case 2:
                     [btn setImage:[UIImage imageNamed:@"button3.png"] forState:UIControlStateNormal];
                     break;
                 case 3:
                     [btn setImage:[UIImage imageNamed:@"button4.png"] forState:UIControlStateNormal];
                     break;
-                    
                 default:
                     break;
             }
-            
-       
-        //    [btn setTitle:[NSString stringWithFormat:@"%i",curCnt] forState:UIControlStateNormal];
-            
         }
         
         [array replaceObjectAtIndex:btag withObject:[NSNumber numberWithInt:curCnt]];
-        
-}
-
-- (IBAction)pressCountBtn2:(id)sender {
-    
-    UIButton * btn = (UIButton *)sender;
-    [self setButtonImage:btn andArray:self.pressCountArray2];
-    
-
-}
-
-- (IBAction)pressCountBtn3:(id)sender {
-    
-    UIButton * btn = (UIButton *)sender;
-    [self setButtonImage:btn andArray:self.pressCountArray3];
-
-}
-
-- (IBAction)pressCountBtn4:(id)sender {
-    
-    UIButton * btn = (UIButton *)sender;
-    int btag = btn.tag;
-    
-    int curCnt = [[self.pressCountArray4 objectAtIndex:btag] intValue];
-    curCnt ++;
-    
-    if (curCnt > 3)
-    {
-        curCnt = 0;
-        [btn setTitle:[NSString stringWithFormat:@""] forState:UIControlStateNormal];
-    }
-    else {
-        [btn setTitle:[NSString stringWithFormat:@"%i",curCnt] forState:UIControlStateNormal];
-    }
-    
-    [self.pressCountArray4 replaceObjectAtIndex:btag withObject:[NSNumber numberWithInt:curCnt]];
-    
-
 }
 
 - (IBAction)clear:(id)sender {
     
- //   UIButton *btnClear = (UIButton*)sender;
-   // int clearCount = 0;
-   // int tagClear = btnClear.tag;
+    for (NSInteger i = 0; i < [self.pressCountArray count]; i++){
+        self.pressCountArray[i] = @0;
+        self.pressCountArray2[i] = @0;
+        self.pressCountArray3[i] = @0;
+        self.pressCountArray4[i] = @0;
+    }
+    
+    for (NSInteger i = 0; i < [self.buttons count]; i++){
+        UIButton *  btn = self.buttons[i];
+        UIButton *  btn2 = self.buttons2[i];
+        UIButton *  btn3 = self.buttons3[i];
+        UIButton *  btn4 = self.buttons4[i];
+        [btn setImage:[UIImage imageNamed:@"button1.png"] forState:UIControlStateNormal];
+        [btn2 setImage:[UIImage imageNamed:@"button1.png"] forState:UIControlStateNormal];
+        [btn3 setImage:[UIImage imageNamed:@"button1.png"] forState:UIControlStateNormal];
+        [btn4 setImage:[UIImage imageNamed:@"button1.png"] forState:UIControlStateNormal];
+      }
+}
+
+- (IBAction)save:(id)sender {
+    [self saveBeat];
+}
+
+- (IBAction)load:(id)sender {
+    [self loadBeat];
+}
+
+//[[NSUserDefaults standardUserDefaults]setInteger:self.volume15Label forKey:@"savedButton15"];
+//[[NSUserDefaults standardUserDefaults]setInteger:self.volume16Label forKey:@"savedButton16"];
+//}
+//
+//- (IBAction)loadBeat:(id)sender {
+//    
+//    self.volume1Label = (int) [[NSUserDefaults standardUserDefaults]integerForKey:@"savedButton1"];
+//    [self.btn1 setTitle:[NSString stringWithFormat:@"%i",self.volume1Label] forState:UIControlStateNormal];
+//    
+//
+
+-(void)saveBeat{
+    
+    [[NSUserDefaults standardUserDefaults] setObject:self.pressCountArray forKey:@"savedBeat"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+-(void)loadBeat{
+    
+    self.pressCountArray = [[[NSUserDefaults standardUserDefaults] arrayForKey:@"savedBeat"] mutableCopy];
+    
+    NSAssert([self.pressCountArray count] == [self.buttons count], @"Array count mismatch");
+    
+    for (NSInteger i = 0; i < [self.buttons count]; i++){
+        UIButton *btn = self.buttons[i];
+        int cur2Cnt = [[self.pressCountArray objectAtIndex:i] integerValue];
+        
+        [btn setTitle:[NSString stringWithFormat:@"%i",cur2Cnt] forState:UIControlStateNormal];
+    }
+}
+
+
+
+
+-(void)loadBeat22{
+    
+    
+    NSMutableArray *countArray = [[[NSUserDefaults standardUserDefaults] arrayForKey:@"savedBeat"] mutableCopy];
     
     for (NSInteger i = 0; i < [self.pressCountArray count]; i++){
+        self.pressCountArray[i] = countArray[i];
+    }
+    
+    
+    for (NSInteger i = 0; i < [self.buttons count]; i++){
+        UIButton *btn = self.buttons[i];
+              int curCnt = [[self.pressCountArray objectAtIndex:i] integerValue];
         
-        self.pressCountArray[i] = @0;
-        
-       
-       
-     //   [[self.pressCountArray replaceObjectAtIndex:i] withObject:self.pressCountArray objectAtIndex:i]];
-        
-        
-     //   [btnClear setTitle:[NSString stringWithFormat:@"%i",clearCount] forState:UIControlStateNormal];
-
+        [btn setTitle:[NSString stringWithFormat:@"%i",curCnt] forState:UIControlStateNormal];
         
     }
-   }
+}
+        // self.pressCountArray =  [[NSUserDefaults standardUserDefaults]objectForKey:@"Prefs"];
+
+        //  int curCnt = [[countArray objectAtIndex] intValue];
+        
+        //   [btn setTitle:[NSString stringWithFormat:@"%i",self.savedCount] forState:UIControlStateNormal];
+
+        
+        
+         //self.savedCount = [[self.pressCountArray objectAtIndex:i] integerValue];
+      //  [[self.pressCountArray objectAtIndex:btag] intValue];
+//        if ([self.pressCountArray[i]integerValue] >0)
+//        {
+//            //curCnt = 0;
+//            // [btn setTitle:[NSString stringWithFormat:@""] forState:UIControlStateNormal];
+//            [btn setImage:[UIImage imageNamed:@"button1.png"] forState:UIControlStateNormal];
+//        }
+//        else {
+//            
+//            switch (self.pressCountArray[i]) {
+//                case 1:
+//                    [btn setImage:[UIImage imageNamed:@"button2.png"] forState:UIControlStateNormal];
+//                    break;
+//                case 2:
+//                    [btn setImage:[UIImage imageNamed:@"button3.png"] forState:UIControlStateNormal];
+//                    break;
+//                case 3:
+//                    [btn setImage:[UIImage imageNamed:@"button4.png"] forState:UIControlStateNormal];
+//                    break;
+//                default:
+//                    break;
+//            }
+//        }
+
+        //[btn setImage:[UIImage imageNamed:@"button2.png"] forState:UIControlStateNormal];
+
+        
+     //   [btn setTitle:[NSString stringWithFormat:@"%i",self.savedCount] forState:UIControlStateNormal];
+    
+    
 
 
 @end
@@ -488,6 +596,24 @@
 
 
 
+//UIButton * btn = (UIButton *)sender;
+//int btag = btn.tag;
+//
+//int curCnt = [[self.pressCountArray4 objectAtIndex:btag] intValue];
+//curCnt ++;
+//
+//if (curCnt > 3)
+//{
+//    curCnt = 0;
+//    [btn setTitle:[NSString stringWithFormat:@""] forState:UIControlStateNormal];
+//}
+//else {
+//    [btn setTitle:[NSString stringWithFormat:@"%i",curCnt] forState:UIControlStateNormal];
+//}
+//
+//[self.pressCountArray4 replaceObjectAtIndex:btag withObject:[NSNumber numberWithInt:curCnt]];
+//
+//
 
 
 
