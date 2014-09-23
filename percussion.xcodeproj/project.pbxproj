@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B51798F19910FE300A63ED9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B51798B19910FE300A63ED9 /* button1.png */; };
-		1B91BF8E199CDA25007ED43B /* tempoLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B91BF8D199CDA25007ED43B /* tempoLabel.png */; };
-		1B91BF90199CDA2B007ED43B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B91BF8F199CDA2B007ED43B /* logo.png */; };
-		1B965526199227AF0089D033 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B965524199227AF0089D033 /* minus.png */; };
-		1B965527199227AF0089D033 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B965525199227AF0089D033 /* plus.png */; };
-		1B96552B199228850089D033 /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B965528199228850089D033 /* button2.png */; };
-		1B96552C199228850089D033 /* button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B965529199228850089D033 /* button3.png */; };
-		1B96552D199228850089D033 /* button4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B96552A199228850089D033 /* button4.png */; };
+		1B294CB219ADFE9100AF686E /* backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CB119ADFE9100AF686E /* backgroundImage.png */; };
+		1B294CB719ADFE9B00AF686E /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CB319ADFE9B00AF686E /* blueButton.png */; };
+		1B294CB819ADFE9B00AF686E /* circleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CB419ADFE9B00AF686E /* circleButton.png */; };
+		1B294CB919ADFE9B00AF686E /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CB519ADFE9B00AF686E /* greenButton.png */; };
+		1B294CBA19ADFE9B00AF686E /* greyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CB619ADFE9B00AF686E /* greyButton.png */; };
+		1B294CC019ADFEA400AF686E /* highVolumeImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CBB19ADFEA400AF686E /* highVolumeImage.png */; };
+		1B294CC119ADFEA400AF686E /* lowVolumeImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CBC19ADFEA400AF686E /* lowVolumeImage.png */; };
+		1B294CC219ADFEA400AF686E /* mediumVolumeImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CBD19ADFEA400AF686E /* mediumVolumeImage.png */; };
+		1B294CC319ADFEA400AF686E /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CBE19ADFEA400AF686E /* play.png */; };
+		1B294CC419ADFEA400AF686E /* rectangleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CBF19ADFEA400AF686E /* rectangleButton.png */; };
+		1B294CC919ADFEAF00AF686E /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CC519ADFEAF00AF686E /* redButton.png */; };
+		1B294CCA19ADFEAF00AF686E /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CC619ADFEAF00AF686E /* stop.png */; };
+		1B294CCB19ADFEAF00AF686E /* tempoBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CC719ADFEAF00AF686E /* tempoBackground.png */; };
+		1B294CCE19ADFF9A00AF686E /* bongo_cutout.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CCD19ADFF9A00AF686E /* bongo_cutout.png */; };
+		1B294CD019AE205900AF686E /* timerBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CCF19AE205900AF686E /* timerBarImage.png */; };
+		1B294CD619AE22A900AF686E /* Images1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CD519AE22A900AF686E /* Images1.xcassets */; };
+		1B294CDA19AE35FF00AF686E /* homePage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B294CD919AE35FF00AF686E /* homePage.png */; };
+		1B911B2119D08086008536D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B911B2019D08086008536D6 /* StoreKit.framework */; };
+		1B911B3219D08FDC008536D6 /* CongaSequencerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B911B3119D08FDC008536D6 /* CongaSequencerViewController.m */; };
+		1B911B3519D09009008536D6 /* CongaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B911B3419D09009008536D6 /* CongaViewController.m */; };
+		1B911B3819D0932B008536D6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B911B3719D0932B008536D6 /* MainViewController.m */; };
+		1B911B4419D167D5008536D6 /* PurchaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B911B4219D167D5008536D6 /* PurchaseViewController.m */; };
+		1B911B4519D167D5008536D6 /* PurchaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B911B4319D167D5008536D6 /* PurchaseViewController.xib */; };
+		1B97E60619ACA8B3002E4F98 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97E60519ACA8B3002E4F98 /* MasterViewController.m */; };
+		1B97E60D19ACC0BF002E4F98 /* BongoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B97E60C19ACC0BF002E4F98 /* BongoViewController.m */; };
 		1B988BB61988134700F9B880 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB51988134700F9B880 /* Foundation.framework */; };
 		1B988BB81988134700F9B880 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB71988134700F9B880 /* CoreGraphics.framework */; };
 		1B988BBA1988134700F9B880 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B988BB91988134700F9B880 /* UIKit.framework */; };
@@ -37,9 +54,6 @@
 		1B988BF91988158800F9B880 /* CYCdh_AcouKick-01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BF61988158800F9B880 /* CYCdh_AcouKick-01.wav */; };
 		1B988BFA1988158800F9B880 /* CYCdh_AcouKick-18.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BF71988158800F9B880 /* CYCdh_AcouKick-18.wav */; };
 		1B988BFB1988158800F9B880 /* CYCdh_LudRimA-07.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BF81988158800F9B880 /* CYCdh_LudRimA-07.wav */; };
-		1B988BFF198CD17200F9B880 /* stopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B988BFE198CD17200F9B880 /* stopButton.png */; };
-		1B988C01198CD17700F9B880 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B988C00198CD17700F9B880 /* playButton.png */; };
-		1B988C071990C63100F9B880 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B988C041990C63100F9B880 /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +67,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B51798B19910FE300A63ED9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
-		1B91BF8D199CDA25007ED43B /* tempoLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tempoLabel.png; sourceTree = "<group>"; };
-		1B91BF8F199CDA2B007ED43B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		1B965524199227AF0089D033 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
-		1B965525199227AF0089D033 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
-		1B965528199228850089D033 /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
-		1B965529199228850089D033 /* button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button3.png; sourceTree = "<group>"; };
-		1B96552A199228850089D033 /* button4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button4.png; sourceTree = "<group>"; };
+		1B294CB119ADFE9100AF686E /* backgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundImage.png; sourceTree = "<group>"; };
+		1B294CB319ADFE9B00AF686E /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		1B294CB419ADFE9B00AF686E /* circleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circleButton.png; sourceTree = "<group>"; };
+		1B294CB519ADFE9B00AF686E /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenButton.png; sourceTree = "<group>"; };
+		1B294CB619ADFE9B00AF686E /* greyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyButton.png; sourceTree = "<group>"; };
+		1B294CBB19ADFEA400AF686E /* highVolumeImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = highVolumeImage.png; sourceTree = "<group>"; };
+		1B294CBC19ADFEA400AF686E /* lowVolumeImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lowVolumeImage.png; sourceTree = "<group>"; };
+		1B294CBD19ADFEA400AF686E /* mediumVolumeImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mediumVolumeImage.png; sourceTree = "<group>"; };
+		1B294CBE19ADFEA400AF686E /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		1B294CBF19ADFEA400AF686E /* rectangleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rectangleButton.png; sourceTree = "<group>"; };
+		1B294CC519ADFEAF00AF686E /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redButton.png; sourceTree = "<group>"; };
+		1B294CC619ADFEAF00AF686E /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop.png; sourceTree = "<group>"; };
+		1B294CC719ADFEAF00AF686E /* tempoBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tempoBackground.png; sourceTree = "<group>"; };
+		1B294CCD19ADFF9A00AF686E /* bongo_cutout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bongo_cutout.png; sourceTree = "<group>"; };
+		1B294CCF19AE205900AF686E /* timerBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timerBarImage.png; sourceTree = "<group>"; };
+		1B294CD519AE22A900AF686E /* Images1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images1.xcassets; sourceTree = "<group>"; };
+		1B294CD919AE35FF00AF686E /* homePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homePage.png; sourceTree = "<group>"; };
+		1B911B2019D08086008536D6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1B911B3019D08FDC008536D6 /* CongaSequencerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CongaSequencerViewController.h; sourceTree = "<group>"; };
+		1B911B3119D08FDC008536D6 /* CongaSequencerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CongaSequencerViewController.m; sourceTree = "<group>"; };
+		1B911B3319D09009008536D6 /* CongaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CongaViewController.h; path = ../CongaViewController.h; sourceTree = "<group>"; };
+		1B911B3419D09009008536D6 /* CongaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CongaViewController.m; path = ../CongaViewController.m; sourceTree = "<group>"; };
+		1B911B3619D0932B008536D6 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1B911B3719D0932B008536D6 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1B911B4119D167D5008536D6 /* PurchaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseViewController.h; sourceTree = "<group>"; };
+		1B911B4219D167D5008536D6 /* PurchaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseViewController.m; sourceTree = "<group>"; };
+		1B911B4319D167D5008536D6 /* PurchaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchaseViewController.xib; sourceTree = "<group>"; };
+		1B91BF9819A60E98007ED43B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1B97E60519ACA8B3002E4F98 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = ../../../Classes/MasterViewController.m; sourceTree = "<group>"; };
+		1B97E60719ACA8C5002E4F98 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = ../../../Classes/MasterViewController.h; sourceTree = "<group>"; };
+		1B97E60B19ACC0BF002E4F98 /* BongoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BongoViewController.h; path = ../BongoViewController.h; sourceTree = "<group>"; };
+		1B97E60C19ACC0BF002E4F98 /* BongoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BongoViewController.m; path = ../BongoViewController.m; sourceTree = "<group>"; };
 		1B988BB21988134700F9B880 /* percussion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = percussion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B988BB51988134700F9B880 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1B988BB71988134700F9B880 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,9 +127,6 @@
 		1B988BF61988158800F9B880 /* CYCdh_AcouKick-01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "CYCdh_AcouKick-01.wav"; path = "percussion/CYCdh_AcouKick-01.wav"; sourceTree = "<group>"; };
 		1B988BF71988158800F9B880 /* CYCdh_AcouKick-18.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "CYCdh_AcouKick-18.wav"; path = "percussion/CYCdh_AcouKick-18.wav"; sourceTree = "<group>"; };
 		1B988BF81988158800F9B880 /* CYCdh_LudRimA-07.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "CYCdh_LudRimA-07.wav"; path = "percussion/CYCdh_LudRimA-07.wav"; sourceTree = "<group>"; };
-		1B988BFE198CD17200F9B880 /* stopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopButton.png; sourceTree = "<group>"; };
-		1B988C00198CD17700F9B880 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
-		1B988C041990C63100F9B880 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +137,7 @@
 				1B988BF31988145C00F9B880 /* AVFoundation.framework in Frameworks */,
 				1B988BF11988144500F9B880 /* AudioToolbox.framework in Frameworks */,
 				1B988BB81988134700F9B880 /* CoreGraphics.framework in Frameworks */,
+				1B911B2119D08086008536D6 /* StoreKit.framework in Frameworks */,
 				1B988BBA1988134700F9B880 /* UIKit.framework in Frameworks */,
 				1B988BB61988134700F9B880 /* Foundation.framework in Frameworks */,
 			);
@@ -123,6 +159,7 @@
 		1B988BA91988134700F9B880 = {
 			isa = PBXGroup;
 			children = (
+				1B294CD519AE22A900AF686E /* Images1.xcassets */,
 				1B988BBB1988134700F9B880 /* percussion */,
 				1B988BDD1988134700F9B880 /* percussionTests */,
 				1B988BB41988134700F9B880 /* Frameworks */,
@@ -146,6 +183,8 @@
 		1B988BB41988134700F9B880 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1B911B2019D08086008536D6 /* StoreKit.framework */,
+				1B91BF9819A60E98007ED43B /* QuartzCore.framework */,
 				1B988BF21988145C00F9B880 /* AVFoundation.framework */,
 				1B988BF01988144500F9B880 /* AudioToolbox.framework */,
 				1B988BB51988134700F9B880 /* Foundation.framework */,
@@ -162,22 +201,40 @@
 				1B988BC41988134700F9B880 /* AppDelegate.h */,
 				1B988BC51988134700F9B880 /* AppDelegate.m */,
 				1B988BC71988134700F9B880 /* Main_iPhone.storyboard */,
+				1B911B4119D167D5008536D6 /* PurchaseViewController.h */,
+				1B911B4219D167D5008536D6 /* PurchaseViewController.m */,
+				1B911B4319D167D5008536D6 /* PurchaseViewController.xib */,
+				1B911B3619D0932B008536D6 /* MainViewController.h */,
+				1B911B3719D0932B008536D6 /* MainViewController.m */,
 				1B988BCA1988134700F9B880 /* Main_iPad.storyboard */,
 				1B988BCD1988134700F9B880 /* ViewController.h */,
 				1B988BCE1988134700F9B880 /* ViewController.m */,
+				1B97E60B19ACC0BF002E4F98 /* BongoViewController.h */,
+				1B97E60C19ACC0BF002E4F98 /* BongoViewController.m */,
+				1B911B3019D08FDC008536D6 /* CongaSequencerViewController.h */,
+				1B911B3119D08FDC008536D6 /* CongaSequencerViewController.m */,
+				1B911B3319D09009008536D6 /* CongaViewController.h */,
+				1B911B3419D09009008536D6 /* CongaViewController.m */,
 				1B988BED198813F800F9B880 /* SoundPlayer.h */,
 				1B988BEE1988140300F9B880 /* SoundPlayer.m */,
-				1B988BFE198CD17200F9B880 /* stopButton.png */,
-				1B988C00198CD17700F9B880 /* playButton.png */,
-				1B988C041990C63100F9B880 /* background.png */,
-				1B51798B19910FE300A63ED9 /* button1.png */,
-				1B965524199227AF0089D033 /* minus.png */,
-				1B965525199227AF0089D033 /* plus.png */,
-				1B965528199228850089D033 /* button2.png */,
-				1B965529199228850089D033 /* button3.png */,
-				1B96552A199228850089D033 /* button4.png */,
-				1B91BF8F199CDA2B007ED43B /* logo.png */,
-				1B91BF8D199CDA25007ED43B /* tempoLabel.png */,
+				1B97E60719ACA8C5002E4F98 /* MasterViewController.h */,
+				1B97E60519ACA8B3002E4F98 /* MasterViewController.m */,
+				1B294CB119ADFE9100AF686E /* backgroundImage.png */,
+				1B294CB319ADFE9B00AF686E /* blueButton.png */,
+				1B294CB419ADFE9B00AF686E /* circleButton.png */,
+				1B294CB519ADFE9B00AF686E /* greenButton.png */,
+				1B294CB619ADFE9B00AF686E /* greyButton.png */,
+				1B294CBB19ADFEA400AF686E /* highVolumeImage.png */,
+				1B294CBC19ADFEA400AF686E /* lowVolumeImage.png */,
+				1B294CBD19ADFEA400AF686E /* mediumVolumeImage.png */,
+				1B294CBE19ADFEA400AF686E /* play.png */,
+				1B294CBF19ADFEA400AF686E /* rectangleButton.png */,
+				1B294CC519ADFEAF00AF686E /* redButton.png */,
+				1B294CC619ADFEAF00AF686E /* stop.png */,
+				1B294CC719ADFEAF00AF686E /* tempoBackground.png */,
+				1B294CCD19ADFF9A00AF686E /* bongo_cutout.png */,
+				1B294CCF19AE205900AF686E /* timerBarImage.png */,
+				1B294CD919AE35FF00AF686E /* homePage.png */,
 				1B988BD01988134700F9B880 /* Images.xcassets */,
 				1B988BBC1988134700F9B880 /* Supporting Files */,
 			);
@@ -260,6 +317,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = GeorgeFrancis;
 				TargetAttributes = {
+					1B988BB11988134700F9B880 = {
+						DevelopmentTeam = RSWW858M46;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
 					1B988BD51988134700F9B880 = {
 						TestTargetID = 1B988BB11988134700F9B880;
 					};
@@ -289,25 +354,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B294CC919ADFEAF00AF686E /* redButton.png in Resources */,
+				1B294CCA19ADFEAF00AF686E /* stop.png in Resources */,
 				1B988BCC1988134700F9B880 /* Main_iPad.storyboard in Resources */,
-				1B965527199227AF0089D033 /* plus.png in Resources */,
-				1B96552B199228850089D033 /* button2.png in Resources */,
+				1B294CC319ADFEA400AF686E /* play.png in Resources */,
+				1B294CCB19ADFEAF00AF686E /* tempoBackground.png in Resources */,
 				1B988BD11988134700F9B880 /* Images.xcassets in Resources */,
 				1B988BC91988134700F9B880 /* Main_iPhone.storyboard in Resources */,
-				1B988C01198CD17700F9B880 /* playButton.png in Resources */,
+				1B294CB219ADFE9100AF686E /* backgroundImage.png in Resources */,
+				1B294CC419ADFEA400AF686E /* rectangleButton.png in Resources */,
+				1B294CC219ADFEA400AF686E /* mediumVolumeImage.png in Resources */,
+				1B294CB819ADFE9B00AF686E /* circleButton.png in Resources */,
+				1B294CD619AE22A900AF686E /* Images1.xcassets in Resources */,
 				1B988BC01988134700F9B880 /* InfoPlist.strings in Resources */,
+				1B294CB719ADFE9B00AF686E /* blueButton.png in Resources */,
+				1B294CBA19ADFE9B00AF686E /* greyButton.png in Resources */,
+				1B911B4519D167D5008536D6 /* PurchaseViewController.xib in Resources */,
 				1B988BFB1988158800F9B880 /* CYCdh_LudRimA-07.wav in Resources */,
-				1B96552D199228850089D033 /* button4.png in Resources */,
+				1B294CC119ADFEA400AF686E /* lowVolumeImage.png in Resources */,
+				1B294CDA19AE35FF00AF686E /* homePage.png in Resources */,
+				1B294CC019ADFEA400AF686E /* highVolumeImage.png in Resources */,
 				1B988BF51988158000F9B880 /* Acoustic Hat-01.wav in Resources */,
-				1B965526199227AF0089D033 /* minus.png in Resources */,
-				1B988BFF198CD17200F9B880 /* stopButton.png in Resources */,
-				1B91BF90199CDA2B007ED43B /* logo.png in Resources */,
+				1B294CCE19ADFF9A00AF686E /* bongo_cutout.png in Resources */,
 				1B988BF91988158800F9B880 /* CYCdh_AcouKick-01.wav in Resources */,
-				1B988C071990C63100F9B880 /* background.png in Resources */,
-				1B96552C199228850089D033 /* button3.png in Resources */,
+				1B294CD019AE205900AF686E /* timerBarImage.png in Resources */,
 				1B988BFA1988158800F9B880 /* CYCdh_AcouKick-18.wav in Resources */,
-				1B91BF8E199CDA25007ED43B /* tempoLabel.png in Resources */,
-				1B51798F19910FE300A63ED9 /* button1.png in Resources */,
+				1B294CB919ADFE9B00AF686E /* greenButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +400,14 @@
 			files = (
 				1B988BCF1988134700F9B880 /* ViewController.m in Sources */,
 				1B988BC61988134700F9B880 /* AppDelegate.m in Sources */,
+				1B97E60D19ACC0BF002E4F98 /* BongoViewController.m in Sources */,
+				1B911B3219D08FDC008536D6 /* CongaSequencerViewController.m in Sources */,
+				1B911B4419D167D5008536D6 /* PurchaseViewController.m in Sources */,
+				1B911B3819D0932B008536D6 /* MainViewController.m in Sources */,
+				1B97E60619ACA8B3002E4F98 /* MasterViewController.m in Sources */,
 				1B988BEF1988140300F9B880 /* SoundPlayer.m in Sources */,
 				1B988BC21988134700F9B880 /* main.m in Sources */,
+				1B911B3519D09009008536D6 /* CongaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,10 +542,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: George Francis (8V2QFZD9RM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: George Francis (8V2QFZD9RM)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "percussion/percussion-Prefix.pch";
 				INFOPLIST_FILE = "percussion/percussion-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -477,10 +558,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: George Francis (8V2QFZD9RM)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: George Francis (8V2QFZD9RM)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "percussion/percussion-Prefix.pch";
 				INFOPLIST_FILE = "percussion/percussion-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
