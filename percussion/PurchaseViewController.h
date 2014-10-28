@@ -20,9 +20,9 @@
 @property (strong, nonatomic) IBOutlet UIButton *buyButton;
 - (IBAction)buyProduct:(id)sender;
 -(void)getProductInfo:(UIViewController*)viewController;
+- (IBAction)restoreCompletedTransactions:(id)sender;
 
 
-
-
+@property BOOL addOnBrought;
 
 @end

@@ -27,8 +27,24 @@
 {
     [super viewDidLoad];
     
+    self.level2Button.enabled = NO;
+    
     self.purchaseController = [[PurchaseViewController alloc]init];
     
+    self.passBoolPurchase = NO;
+    self.passBoolPurchase = [[NSUserDefaults standardUserDefaults] boolForKey:@"addOnBool"];
+    
+    if (self.passBoolPurchase == YES) {
+        self.level2Button.enabled = YES;
+        self.buyCongasButton.hidden = YES;
+    }
+    
+    if (self.passBoolPurchase == NO) {
+        self.level2Button.enabled = NO;
+        self.buyCongasButton.hidden = NO;
+    }
+    
+    [[NSUserDefaults standardUserDefaults] setBool:self.passBoolPurchase forKey:@"addOnBooll"];
     [[SKPaymentQueue defaultQueue]addTransactionObserver:self.purchaseController];
 }
 
@@ -49,18 +65,19 @@
 }
 */
 
-- (IBAction)purchaseItem:(id)sender {
-    
-    NSLog(@"Clicked conga button");
+//- (IBAction)purchaseItem:(id)sender {
+//    
+//    NSLog(@"Clicked conga button");
+//
+//    
+//    _purchaseController.productID = @"drums001";
+//    
+//    [self.navigationController pushViewController:self.purchaseController animated:YES];
+//    
+//    [_purchaseController getProductInfo:self];
+//    
+//}
 
-    
-    _purchaseController.productID = @"drums001";
-    
-    [self.navigationController pushViewController:_purchaseController animated:YES];
-    
-    [_purchaseController getProductInfo:self];
-    
-}
 
 -(void)enableLevel2{
     

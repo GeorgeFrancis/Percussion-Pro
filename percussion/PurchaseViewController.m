@@ -28,8 +28,11 @@
 
 - (void)viewDidLoad
 {
+    _productID = @"drums001";
+    [self getProductInfo:self];
     
     [super viewDidLoad];
+    self.addOnBrought = NO;
     self.buyButton.enabled = NO;
     
 }
@@ -55,6 +58,11 @@
     
 }
 
+- (IBAction)restoreCompletedTransactions:(id)sender {
+    
+    [[SKPaymentQueue defaultQueue]addTransactionObserver:self];
+    [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
+}
 
 #pragma mark -
 #pragma mark SKProductRequestDelegate
@@ -104,6 +112,11 @@
                 NSLog(@"Transaction Failed");
                 [[SKPaymentQueue defaultQueue]finishTransaction:transaction];
                 break;
+            case SKPaymentTransactionStateRestored:
+                [self unlockFeature];
+                [[SKPaymentQueue defaultQueue]
+                 finishTransaction:transaction];
+                break;
                 
             default:
                 break;
@@ -111,13 +124,24 @@
     }
 }
 
+
+- (void)restoreTransaction:(SKPaymentTransaction *)transaction {}
+-(void)paymentQueue:(SKPaymentQueue *)queue restoreCompletedTransactionsFailedWithError:(NSError *)error{}
+-(void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue{}
+
+
 -(void)unlockFeature{
     
     self.buyButton.enabled = NO;
-    [self.buyButton setTitle:@"Purchased" forState:UIControlStateDisabled];
-    [self.homeViewController enableLevel2];
-}
+    self.addOnBrought = YES;
+    
+    [[NSUserDefaults standardUserDefaults] setBool:self.addOnBrought forKey:@"addOnBool"];
 
+    [self.buyButton setTitle:@"Purchased" forState:UIControlStateDisabled];
+    
+    self.buyButton.hidden = YES;
+    
+}
 
 
 @end

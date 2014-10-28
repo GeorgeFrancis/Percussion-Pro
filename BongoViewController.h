@@ -21,6 +21,8 @@
 @property NSURL *sound3URL;
 @property NSURL *sound4URL;
 
+@property BOOL testBool;
+
 - (IBAction)playbongo:(id)sender;
 
 @end

@@ -30,6 +30,7 @@
     [self createSoundURLs];
     
      [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -84,16 +85,16 @@
 
 - (void)createSoundURLs
 {
-    NSString *soundFile1 = [[NSBundle mainBundle] pathForResource:@"Acoustic Hat-01" ofType:@"wav"];
+    NSString *soundFile1 = [[NSBundle mainBundle] pathForResource:@"RightBongo" ofType:@"wav"];
     self.sound1URL = [NSURL fileURLWithPath:soundFile1];
     
-    NSString *soundFile2 = [[NSBundle mainBundle] pathForResource:@"CYCdh_LudRimA-07" ofType:@"wav"];
+    NSString *soundFile2 = [[NSBundle mainBundle] pathForResource:@"LeftBongo" ofType:@"wav"];
     self.sound2URL = [NSURL fileURLWithPath:soundFile2];
     
-    NSString *soundFile3 = [[NSBundle mainBundle] pathForResource:@"CYCdh_AcouKick-18" ofType:@"wav"];
+    NSString *soundFile3 = [[NSBundle mainBundle] pathForResource:@"LeftBongoEdge" ofType:@"wav"];
     self.sound3URL = [NSURL fileURLWithPath:soundFile3];
     
-    NSString *soundFile4 = [[NSBundle mainBundle] pathForResource:@"CYCdh_AcouKick-01" ofType:@"wav"];
+    NSString *soundFile4 = [[NSBundle mainBundle] pathForResource:@"RightBongoEdge" ofType:@"wav"];
     self.sound4URL = [NSURL fileURLWithPath:soundFile4];
 }
 

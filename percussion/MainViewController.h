@@ -13,9 +13,15 @@
 @interface MainViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIButton *level2Button;
+@property (strong, nonatomic) IBOutlet UIButton *buyCongasButton;
 
-- (IBAction)purchaseItem:(id)sender;
+//- (IBAction)purchaseItem:(id)sender;
 @property (strong, nonatomic) PurchaseViewController *purchaseController;
+
+@property BOOL passBoolPurchase;
+
+
+
 -(void)enableLevel2;
 
 @end
