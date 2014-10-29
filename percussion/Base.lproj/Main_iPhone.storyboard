@@ -929,6 +929,9 @@
                                     <action selector="pressCountBtn3:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="s3o-b0-xTa"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="3jT-ys-RnE">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            </imageView>
                             <button opaque="NO" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRp-8C-c51">
                                 <rect key="frame" x="485" y="174" width="28" height="28"/>
                                 <state key="normal" backgroundImage="greenButton.png">
@@ -1242,9 +1245,6 @@
                                     <action selector="saveNameBeat3:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y1g-gX-lzL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="3jT-ys-RnE">
-                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
