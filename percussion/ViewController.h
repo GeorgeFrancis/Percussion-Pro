@@ -10,19 +10,20 @@
 #import "SoundPlayer.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "MasterViewController.h"
+
 
 @interface ViewController : UIViewController
 
 @property BOOL playing;
-@property (strong, nonatomic) IBOutlet UIButton *playButton;
 
 @property NSURL *sound1URL;
 @property NSURL *sound2URL;
 @property NSURL *sound3URL;
 @property NSURL *sound4URL;
+@property NSURL *sound5URL;
 
 @property (nonatomic, strong) SoundPlayer *soundPlayer;
-
 
 @property float btnTimer1;
 @property float btnTimer2;
@@ -109,6 +110,23 @@
 @property int press4count15;
 @property int press4count16;
 
+@property int press5count1;
+@property int press5count2;
+@property int press5count3;
+@property int press5count4;
+@property int press5count5;
+@property int press5count6;
+@property int press5count7;
+@property int press5count8;
+@property int press5count9;
+@property int press5count10;
+@property int press5count11;
+@property int press5count12;
+@property int press5count13;
+@property int press5count14;
+@property int press5count15;
+@property int press5count16;
+
 @property NSTimer *timer;
 @property float timerCounter;
 @property float tempoCount;
@@ -118,14 +136,17 @@
 @property NSMutableArray *pressCountArray2;
 @property NSMutableArray *pressCountArray3;
 @property NSMutableArray *pressCountArray4;
+@property NSMutableArray *pressCountArray5;
 
 @property NSInteger numberOfRows;
 
 @property NSMutableArray *countArray;
 @property int savedCount;
+@property int buttonCount;
 
 
 @property NSMutableArray *btnTimerArray;
+@property (strong, nonatomic) IBOutlet UIImageView *tempoImageText;
 
 @property (strong, nonatomic) IBOutlet UILabel *tempoLabel;
 
@@ -133,18 +154,46 @@
 @property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *buttons2;
 @property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *buttons3;
 @property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *buttons4;
+@property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *buttons5;
+
+@property (strong, nonatomic)IBOutletCollection(UIButton) NSArray *interfaceButtons;
+
+@property (strong, nonatomic) IBOutlet UIButton *playButton;
+
+
 
 - (IBAction)pressCountBtn:(id)sender;
 - (IBAction)pressCountBtn2:(id)sender;
 - (IBAction)pressCountBtn3:(id)sender;
 - (IBAction)pressCountBtn4:(id)sender;
+- (IBAction)pressCountBtn5:(id)sender;
 
 - (IBAction)increaseTempo:(id)sender;
 - (IBAction)decreaseTempo:(id)sender;
 
 - (IBAction)clear:(id)sender;
-- (IBAction)save:(id)sender;
-- (IBAction)load:(id)sender;
+
+- (IBAction)saveNameBeat1:(id)sender;
+- (IBAction)saveNameBeat2:(id)sender;
+- (IBAction)saveNameBeat3:(id)sender;
+
+@property (strong, nonatomic) IBOutlet UIButton *beatName1;
+@property (strong, nonatomic) IBOutlet UIButton *beatName2;
+@property (strong, nonatomic) IBOutlet UIButton *beatName3;
+
+- (IBAction)saveBeat1:(id)sender;
+- (IBAction)loadBeat1:(id)sender;
+- (IBAction)saveBeat2:(id)sender;
+- (IBAction)loadBeat2:(id)sender;
+- (IBAction)saveBeat3:(id)sender;
+- (IBAction)loadBeat3:(id)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *saveLoadBeat1;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *saveLoadBeat2;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *saveLoadBeat3;
+
+
+
 
 - (IBAction)playsound:(id)sender;
 @end
